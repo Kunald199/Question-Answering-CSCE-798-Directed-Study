@@ -18,54 +18,52 @@ def hello():
 
 @app.route('/predict',methods = ['POST', 'GET'])
 def home():
-    pdfFileObj1 = open('water1.pdf','rb')
+    pdfFileObj = open('Water.pdf','rb')
 
-    pdfReader1 = PyPDF4.PdfFileReader(pdfFileObj1)
+    pdfReader = PyPDF4.PdfFileReader(pdfFileObj)
 
-    pages1 = pdfReader1.numPages
+    pages = pdfReader.numPages
 
-    for i in range(pages1):
-            pageObj1 = pdfReader1.getPage(i)
-            text1 = pageObj1.extractText().split("  ")
+    for i in range(pages):
+            pageObj = pdfReader.getPage(i)
+            text = pageObj.extractText().split("  ")
 
-    pdfFileObj1.close()
+    pdfFileObj.close()
 
 
     text1=list()
-    for line1 in text1:
-        line1 = line1.replace('\n','')
-        text1.append(line1)
+    for line in text:
+        line = line.replace('\n','')
+        text1.append(line)
 
 
     list1_joined1 = ",".join(text1)
-    
-    pdfFileObj2 = open('water2.pdf','rb')
 
-    pdfReader2 = PyPDF4.PdfFileReader(pdfFileObj2)
-
-    pages2 = pdfReader2.numPages
-
-    for i in range(pages2):
-            pageObj2 = pdfReader2.getPage(i)
-            text2 = pageObj2.extractText().split("  ")
-
-    pdfFileObj2.close()
-
-
-    text2=list()
-    for line2 in text2:
-        line2 = line2.replace('\n','')
-        text2.append(line2)
-
-
-    list1_joined2 = ",".join(text2)
 
 
     ##########################
 
+
     corpus=[]
     corpus.append(list1_joined1)
-    corpus.append(list1_joined2)
+
+
+
+
+
+
+
+    # Trying for BM25
+    """corpus=["Sandra Day O’Connor, née Sandra Day, (born March 26, 1930, El Paso, Texas, U.S.), associate justice of the Supreme Court of the United States from 1981 to 2006. She was the first woman to serve on the Supreme Court. A moderate conservative, she was known for her dispassionate and meticulously researched opinions. Sandra Day grew up on a large family ranch near Duncan, Arizona. She received undergraduate (1950) and law (1952) degrees from Stanford University, where she met the future chief justice of the United States William Rehnquist.",
+        ''' In South Carolina,the action level for lead in drinking water is 0.015 mg/L and action level for copper in drinking water is 1.3 mg/L.
+        In North Carolina,the action level for lead in drinking water is 0.015 mg/L and action level for copper in drinking water is 1.3 mg/L.
+     In New York,the action level for lead in drinking water is 0.015 mg/L and action level for copper in drinking water is 1.3 mg/L.
+     The Environmental Protection Agency (EPA) kept safe level for lead in drinking water as 0.015 mg/L safe level for copper in drinking water as 1.3 mg/L.
+     The World Health Organization action level for lead in drinking water is 0.01 mg/L and action level for copper in drinking wateris 2 mg/L.
+     In Michigan,the action level for lead in drinking water is 0.015 mg/L and action level for copper in drinking water is 1.2 mg/L.
+     California has set action level of lead to 0.015 mg/L and for copper the action level is 0.0013 mg/L.''',
+     '''The Fourth Amendment of the U.S. Constitution provides that the right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.'The ultimate goal of this provision is to protect people’s right to privacy and freedom from unreasonable intrusions by the government. However, the Fourth Amendment does not guarantee protection from all searches and seizures, but only those done by the government and deemed unreasonable under the law.''']"""
+
 
 
     tokenized_corpus = [doc.split(" ") for doc in corpus]
