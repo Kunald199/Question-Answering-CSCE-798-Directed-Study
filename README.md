@@ -18,7 +18,7 @@ rank_bm25
 
 transformers
 
-There is a seperate file which cites there references.
+There is a seperate file which cites there requirements.
 
 
 Covid data: https://github.com/nytimes/covid-19-data/blob/master/live/us-counties.csv
