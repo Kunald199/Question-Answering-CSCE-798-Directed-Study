@@ -18,32 +18,54 @@ def hello():
 
 @app.route('/predict',methods = ['POST', 'GET'])
 def home():
-    pdfFileObj = open('Water.pdf','rb')
+    pdfFileObj1 = open('water1.pdf','rb')
 
-    pdfReader = PyPDF4.PdfFileReader(pdfFileObj)
+    pdfReader1 = PyPDF4.PdfFileReader(pdfFileObj1)
 
-    pages = pdfReader.numPages
+    pages1 = pdfReader1.numPages
 
-    for i in range(pages):
-            pageObj = pdfReader.getPage(i)
-            text = pageObj.extractText().split("  ")
+    for i in range(pages1):
+            pageObj1 = pdfReader1.getPage(i)
+            text1 = pageObj1.extractText().split("  ")
 
-    pdfFileObj.close()
+    pdfFileObj1.close()
 
 
     text1=list()
-    for line in text:
-        line = line.replace('\n','')
-        text1.append(line)
+    for line1 in text1:
+        line1 = line1.replace('\n','')
+        text1.append(line1)
 
 
     list1_joined1 = ",".join(text1)
+    
+    pdfFileObj2 = open('water2.pdf','rb')
+
+    pdfReader2 = PyPDF4.PdfFileReader(pdfFileObj2)
+
+    pages2 = pdfReader2.numPages
+
+    for i in range(pages2):
+            pageObj2 = pdfReader2.getPage(i)
+            text2 = pageObj2.extractText().split("  ")
+
+    pdfFileObj2.close()
+
+
+    text2=list()
+    for line2 in text2:
+        line2 = line2.replace('\n','')
+        text2.append(line2)
+
+
+    list1_joined2 = ",".join(text2)
 
 
     ##########################
 
     corpus=[]
     corpus.append(list1_joined1)
+    corpus.append(list1_joined2)
 
 
     tokenized_corpus = [doc.split(" ") for doc in corpus]
