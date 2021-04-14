@@ -30,6 +30,8 @@ To execute QAText run the command
 
 python app1.py   
 
+Note: It may take few minutes everytime when you are trying to run it for the first time.
+
 To execute TAPAS, you can run it on Google Colab
 
 *******************************************************************************
