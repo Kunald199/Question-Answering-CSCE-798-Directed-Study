@@ -20,6 +20,9 @@ transformers
 
 There is a seperate file which cites there references.
 
+
+Covid data: https://github.com/nytimes/covid-19-data/blob/master/live/us-counties.csv
+
 *******************************************************************************
 For executing the file, download a zip in your local computer and execute the program in cmd/terminal
 
