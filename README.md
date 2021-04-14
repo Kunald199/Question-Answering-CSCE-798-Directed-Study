@@ -9,9 +9,13 @@ It contains Question Answering over Water Regulation documents (QAText) and Ques
 For this project we have used open source libraries and packages
 
 flask 
+
 torch
+
 PyPDF4
+
 rank_bm25
+
 transformers
 
 There is a seperate file which cites there references.
