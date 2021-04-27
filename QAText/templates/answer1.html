@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Question Answering </title>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/answer.css') }}">
+</head>
+
+<body>
+
+
+  <div class="main">
+    <div class="header">
+      <div class="left_img">
+        <img src="/static/usc.png" height="80px" width="150px">
+
+        <img class="right_img" src="/static/usc.png" height="80px" width="150px">
+      </div>
+      <h1> <u>Welcome to Question Answering System </u> </h1>
+
+    </div>
+
+
+
+    <div class="imges">
+      <h3><u> Below is the paragraph. You can ask cross check your answers. </u></h3>
+      <p> In South Carolina, the action level for lead in drinking water is 0.015 mg/L and action level for copper in drinking water is 1.3 mg/L. In North Carolina, the action level for lead in drinking water is 0.015 mg/L and action level for copper in drinking water is 1.3 mg/L. In New York, the action level for lead in drinking water is 0.015 mg/L and action level for copper in drinking water is 1.3 mg/L. The Environmental Protection Agency (EPA) kept safe level for lead in drinking water as 0.015 mg/L safe level for copper in drinking water as 1.3 mg/L. The World Health Organization set safe level for lead in drinking water to 0.01 mg/L and safe level for copper in drinking water to 2 mg/L. In Michigan, the action level for lead in drinking water is 0.015 mg/L and action level for copper in drinking water is 1.2 mg/L. California has set action level of lead to 0.015 mg/L and for copper the action level is 0.0013 mg/L.Illinois has set action level of lead to 0.005mg/l and for copper the action level is 0.200 mg/L.</p>
+     <br>
+     <p>In Ohio, the action level for lead in drinking water is 0.015 mg/L and the action level for copper is 1.3
+mg/L. In Nevada, the action level for lead in drinking water is 0.015 mg/L and the action level for copper
+is 1.3 mg/L. In Iowa, the action level for lead in drinking water is 0.015 mg/L and the action level for
+copper is 1.3 mg/L. In Missouri, the action level for lead in drinking water is 0.015 mg/L and the action
+level for copper is 1.3 mg/L. </p>
+
+     <!-- <p> The Fourth Amendment of the U.S. Constitution provides that the right of the people to be secure in
+their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be
+violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and
+particularly describing the place to be searched, and the persons or things to be seized.
+The ultimate goal of this provision is to protect peoples right to privacy and freedom from unreasonable
+intrusions by the government. However, the Fourth Amendment does not guarantee protection from all
+searches and seizures, but only those done by the government and deemed unreasonable under the
+law.</p>
+<br>
+<p> Sandra Day O Connor, nee Sandra Day, (born March 26, 1930, El Paso, Texas, U.S.), associate justice of
+the Supreme Court of the United States from 1981 to 2006. She was the first woman to serve on the
+Supreme Court. A moderate conservative, she was known for her dispassionate and meticulously
+researched opinions. Sandra Day grew up on a large family ranch near Duncan, Arizona. She received
+undergraduate (1950) and law (1952) degrees from Stanford University, where she met the future chief
+justice of the United States William Rehnquist.</p> -->
+
+   </div>
+    <br>
+    <br>
+
+    <div class="formm">
+      <h3> The answer to your question is  </h3>
+      <br>
+      <h4> {{data}} </h4>
+
+
+
+    </div>
+    <div class=button1>
+    <b><a style="text-decoration:none"href="/"> Go Back </a></b>
+    </div>
+  </div>
+
+</body>
+
+</html>
