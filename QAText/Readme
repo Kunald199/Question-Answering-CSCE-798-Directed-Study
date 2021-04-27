@@ -1,3 +1,7 @@
 The app1_new.py is using alternate retrieval method. The retrieval is keyword based retrirval of relavant documents.
 
 For app1_new.py Water.pdf and Water1.pdf are the document used.
+
+To execute the code : python app1_new.py
+
+Then copy the localhost address from your cmd/terminal and open it in your browser to see the system in action.
