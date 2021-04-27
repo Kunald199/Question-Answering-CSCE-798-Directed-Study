@@ -1,6 +1,6 @@
 The app1_new.py is using alternate retrieval method. The retrieval is keyword based retrirval of relavant documents.
 
-For app1_new.py Water.pdf and Water1.pdf are the document used.
+For app1_new.py Water.pdf and Water1.pdf are the document used. after1.html and answer1.html will be the template files.
 
 To execute the code : python app1_new.py
 
