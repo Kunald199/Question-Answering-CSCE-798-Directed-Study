@@ -15,7 +15,7 @@ app= Flask(__name__)
 
 @app.route('/',methods = ['POST', 'GET'])
 def hello():
-    return render_template("after.html")
+    return render_template("after1.html")
 
 @app.route('/predict',methods = ['POST', 'GET'])
 def home():
@@ -194,7 +194,7 @@ def home():
 
 
 
-    return render_template("answer.html",data=answer)
+    return render_template("answer1.html",data=answer)
 
 
 
