@@ -5,3 +5,8 @@ For app1_new.py Water.pdf and Water1.pdf are the document used. after1.html and 
 To execute the code : python app1_new.py
 
 Then copy the localhost address from your cmd/terminal and open it in your browser to see the system in action.
+
+
+Additional Package used:
+
+autocorrect https://pypi.org/project/autocorrect/
