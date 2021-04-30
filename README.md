@@ -37,13 +37,13 @@ Copy paste the localhost link from the terminal/cmd and open it on your browser
 
 Note: It may take few minutes everytime when you are trying to run it for the first time.
 
-**Sample Questions: **
+**Sample Questions:**
 
 **How much lead is safe in water as per Illinois?**
 
 **Maximum limit on copper according to California?**
 
-**Highest level of copper allowed in water in South Carolina? **
+**Highest level of copper allowed in water in South Carolina?**
 
 **In iowaa, what is the safety limit set on copper in water?**
 
