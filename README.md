@@ -26,7 +26,7 @@ Covid data: https://github.com/nytimes/covid-19-data/blob/master/live/us-countie
 *******************************************************************************
 For executing the file, download a zip in your local computer, unzip and store the folder and execute the program in cmd/terminal
 
-To execute QAText run the command " python app1.py  "
+To execute QAText run the command **" python app1.py  "**
 
 
 Make sure your current working directory is QAText
