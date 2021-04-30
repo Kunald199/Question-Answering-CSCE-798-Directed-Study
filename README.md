@@ -27,10 +27,13 @@ Covid data: https://github.com/nytimes/covid-19-data/blob/master/live/us-countie
 For executing the file, download a zip in your local computer and execute the program in cmd/terminal
 
 To execute QAText run the command 
+
 Make sure your current working directory is QAText
+
 python app1.py   
 
 Copy paste the localhost link from the terminal/cmd and open it on your browser
+
 Note: It may take few minutes everytime when you are trying to run it for the first time.
 
 To execute TAPAS, you can run it on Google Colab
