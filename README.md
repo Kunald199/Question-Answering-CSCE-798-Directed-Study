@@ -24,7 +24,7 @@ There is a seperate file which cites there requirements.
 Covid data: https://github.com/nytimes/covid-19-data/blob/master/live/us-counties.csv
 
 *******************************************************************************
-For executing the file, download a zip in your local computer and execute the program in cmd/terminal
+For executing the file, download a zip in your local computer, unzip and store the folder and execute the program in cmd/terminal
 
 To execute QAText run the command " python app1.py  "
 
