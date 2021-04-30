@@ -10,3 +10,8 @@ Then copy the localhost address from your cmd/terminal and open it in your brows
 Additional Package used:
 
 autocorrect https://pypi.org/project/autocorrect/
+
+
+EvaluateQA_Water is evaluation for app1_new.py (New retriever keyword based)
+
+EvaluateQA is evaluation for app1 (original retriever BM25L)
